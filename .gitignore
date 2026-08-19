@@ -1,0 +1,5 @@
+leads.json
+node_modules
+dist
+dist-react
+*.log

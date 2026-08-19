@@ -1,0 +1,113 @@
+:root {
+  --bg: #0a0a0a;
+  --card: #1a1a1a;
+  --red: #eb0000;
+  --text: #ffffff;
+  --muted: #dcdcdc;
+  --gray: #797b85;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Space Grotesk", sans-serif;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, .display {
+  font-family: "Orbitron", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.section {
+  padding: 5rem 1rem;
+}
+
+.section-title {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  color: var(--red);
+  margin-bottom: 1rem;
+}
+
+.section-sub {
+  text-align: center;
+  color: var(--muted);
+  font-size: 1.125rem;
+  line-height: 1.8;
+  max-width: 640px;
+  margin: 0 auto 3rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-red {
+  background: var(--red);
+  color: #fff;
+}
+
+.btn-red:hover {
+  background: #c40000;
+}
+
+.btn-dark {
+  background: #18181a;
+  color: #e5e5e5;
+}
+
+.btn-dark:hover {
+  background: #444;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  scrollbar-width: none;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.5rem;
+  }
+}
